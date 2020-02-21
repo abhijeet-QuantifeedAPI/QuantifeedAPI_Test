@@ -1,0 +1,16 @@
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\QuantifeedWebAPI.deps.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\QuantifeedWebAPI.runtimeconfig.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\QuantifeedWebAPI.runtimeconfig.dev.json
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\QuantifeedWebAPI.dll
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\bin\Debug\netcoreapp2.1\QuantifeedWebAPI.pdb
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.csprojAssemblyReference.cache
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.RazorAssemblyInfo.cache
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.RazorAssemblyInfo.cs
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.AssemblyInfoInputs.cache
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.AssemblyInfo.cs
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.RazorTargetAssemblyInfo.cache
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.dll
+C:\Users\XPS\source\repos\QuantifeedWebAPI\QuantifeedWebAPI\obj\Debug\netcoreapp2.1\QuantifeedWebAPI.pdb

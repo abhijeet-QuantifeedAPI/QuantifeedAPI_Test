@@ -1,0 +1,65 @@
+CREATE DATABASE [QuantifeedWebAPITest]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'QuantifeedWebAPITest', FILENAME = N'C:\Users\XPS\QuantifeedWebAPITest.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'QuantifeedWebAPITest_log', FILENAME = N'C:\Users\XPS\QuantifeedWebAPITest_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+GO
+
+USE QuantifeedWebAPITest
+GO
+
+CREATE TABLE [Users] (
+ [UserId] INT IDENTITY (1, 1) NOT NULL,
+ [UserName] NVARCHAR (200) NOT NULL,
+ [Email] NVARCHAR (1000) NULL,
+ [Alias] NVARCHAR (1000) NULL,
+ [FirstName] NVARCHAR (1000) NULL,
+ [LastName] NVARCHAR (1000) NULL
+ CONSTRAINT [PK_QuantifeedWebAPITest.Users] PRIMARY KEY CLUSTERED ([UserId] ASC)
+ );
+ 
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Mike', 'Mike.Tan@gmail.com', 'Mike', 'Mike', 'Tan');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Abhijeet', 'abc@gmail.com', 'Abhijeet', 'Abhijeet', 'Srivastava');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Abhishek', 'def@gmail.com', 'Abhishek', 'Abhishek', 'Srivastava');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('James', 'James@gmail.com', 'James', 'James', 'Wong');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Grace', 'Grace@gmail.com', 'Grace', 'Grace', 'Grace Koo');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Fiona', 'Fiona@gmail.com', 'Fiona', 'Fiona', 'Wei');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Carole', 'Carole@gmail.com', 'Carole', 'Carole', 'Ong');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('HonSing', 'HonSing@gmail.com', 'HonSing', 'HonSing', 'Kon');
+INSERT INTO Users(UserName,Email,Alias, FirstName, LastName)  VALUES('Romeet', 'Romeet@gmail.com', 'Romeet', 'Romeet', 'Jain');
+ 
+CREATE TABLE Managers(
+ManagerId INT PRIMARY KEY IDENTITY(1,1), 
+Position VARCHAR(50), 
+UserID INT FOREIGN KEY REFERENCES QuantifeedWebAPITest.dbo.Users(UserID), 
+);
+
+
+INSERT INTO Managers(Position,UserID)  VALUES('Junior', 1);
+
+INSERT INTO Managers(Position,UserID)  VALUES('Senior', 2);
+
+INSERT INTO Managers(Position,UserID)  VALUES('Junior', 3);
+
+INSERT INTO Managers(Position,UserID)  VALUES('Senior', 4);
+
+
+CREATE TABLE Clients(
+ClientId INT PRIMARY KEY IDENTITY(1,1), 
+Level Int, 
+ManagerId INT , 
+UserID INT FOREIGN KEY REFERENCES QuantifeedWebAPITest.dbo.Users(UserID),
+);
+
+INSERT INTO Clients(Level,ManagerID, UserID)  VALUES(1, 1, 5);
+
+INSERT INTO Clients(Level,ManagerID, UserID)  VALUES(2, 1, 6);
+
+INSERT INTO Clients(Level,ManagerID, UserID)  VALUES(3, 2, 7);
+
+INSERT INTO Clients(Level,ManagerID, UserID)  VALUES(4, 3, 8);
+
+INSERT INTO Clients(Level,ManagerID, UserID)  VALUES(5, 4, 9);
+ 
+ 
